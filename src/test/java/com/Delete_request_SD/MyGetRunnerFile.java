@@ -1,5 +1,5 @@
+package com.Delete_request_SD;
 
-package com.basic;
 
 import org.junit.runner.RunWith;
 
@@ -8,13 +8,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		          features= {"src/test/resources/com/basic/MyBasicFeature.feature"},
-		          glue= {"com.basic"},
+		          features= {"src/test/resources/com/Delete_request_FF/"},
+		          glue= {"com.Delete_request_SD"},
 		          plugin= {"pretty",
 		        		  "html:target/cucumber-htmlreport",
-		        		  "json:target/cucumber-report2.json",}
+		        		  "json:target/cucumber-report3.json",}
 		          
 		)
-public class MyBasicRunnerFile {
+
+
+public class MyGetRunnerFile {
 
 }
