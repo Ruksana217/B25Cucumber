@@ -1,3 +1,4 @@
+@regressions
 Feature: Validation for bookstore data
 
 Scenario: 1test Book Tittle is present in response
@@ -7,13 +8,14 @@ Then Validate Git Pocket guide tittle present
 Then validate Learning JavaScript Design Patterns tittle present
 
 
-
+@smoke
 Scenario: 2 Test Book Tittle is present in respons
 Given Hit the bookstore api
 Then Validate as status code
 Then validate "Git Pocket Guide" at jsonpath "books[0].title" title present
 Then validate "Learning JavaScript Design Patterns" at jsonpath "books[1].title" title present
 
+@smoke
 Scenario: 3 Numbers is present respons
 Given Hit the bookstore api
 Then Validate as status code

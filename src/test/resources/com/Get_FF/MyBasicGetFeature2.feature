@@ -1,4 +1,3 @@
-@regressions
 Feature: Validation for bookstore data
 
 Scenario: 1test Book Tittle is present in response

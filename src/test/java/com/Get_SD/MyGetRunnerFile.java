@@ -10,6 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		          features= {"src/test/resources/com/Get_FF/"},
 		          glue= {"com.Get_SD"},
+		          tags = "@regression",
 		          plugin= {"pretty",
 		        		  "html:target/cucumber-htmlreport",
 		        		  "json:target/cucumber-report6.json",}
