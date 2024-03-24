@@ -38,7 +38,7 @@ public void validate_user_created() {
    String allresp = response.asString();
    System.out.println("all details = " +allresp);
    System.out.println("Status code = " +response.getStatusCode());
-   Assert.assertTrue(response.getStatusCode() == 201);
+   Assert.assertTrue(response.getStatusCode() == 200);
 }
 @Then("Validate user ID have noo null value")
 public void Validate_user_ID_have_noo_null_value (){
@@ -61,7 +61,7 @@ public void Create_user_with_data_from_file() throws IOException {
 			.relaxedHTTPSValidation()
 			.accept(ContentType.JSON)
 			.body("actJson")
-			.post("https://reqres.in/api/users");
+			.put("https://reqres.in/api/users");
 }
 
 
@@ -79,7 +79,7 @@ public void create_user_with_data_from_file(String string) throws IOException {
 			.relaxedHTTPSValidation()
 			.accept(ContentType.JSON)
 			.body("actJson")
-			.post("https://reqres.in/api/users");
+			.put("https://reqres.in/api/users");
    
 }
 @Then("validate user ID have noo null value")
